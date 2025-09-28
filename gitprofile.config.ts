@@ -62,7 +62,7 @@ const CONFIG = {
     'MySQL',
     'Machine Learning',
   ],
-  experiences: [
+  /*experiences: [
     {
       company: 'Company Name',
       position: 'Position',
@@ -77,7 +77,7 @@ const CONFIG = {
       to: 'August 2021',
       companyLink: 'https://example.com',
     },
-  ],
+  ],*/
   /*certifications: [
     {
       name: 'Lorem ipsum',
