@@ -77,8 +77,8 @@ const CONFIG = {
       to: 'August 2021',
       companyLink: 'https://example.com',
     },
-  ],*/
-  /*certifications: [
+  ],
+  certifications: [
     {
       name: 'Lorem ipsum',
       body: 'Lorem ipsum dolor sit amet',
@@ -120,7 +120,7 @@ const CONFIG = {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     },
-  ],
+  ],*/
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
@@ -134,7 +134,6 @@ const CONFIG = {
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
     defaultTheme: 'lofi',
-  */
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
     disableSwitch: false,
@@ -186,15 +185,6 @@ const CONFIG = {
       'procyon',
     ],
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
-
-  enablePWA: true,
 };
 
 export default CONFIG;
