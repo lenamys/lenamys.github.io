@@ -88,7 +88,7 @@ const CONFIG = {
   ],*/
   educations: [
     {
-      institution: 'Sungkyungwan University - Exchange Student',
+      institution: 'Sungkyunkwan University - Exchange Student',
       degree: 'Computer Science (B.Sc.)',
       from: '08/2025',
       to: '12/2025',
