@@ -114,12 +114,14 @@ const CONFIG = {
       degree: 'Computer Science (B.Sc.)',
       from: '08/2025',
       to: '12/2025',
+      link: 'https://www.skku.edu/eng/',
     },
     {
       institution: 'Free University of Berlin',
       degree: 'Computer Science (B.Sc.)',
       from: '10/2023',
       to: '09/2026',
+      link: 'https://www.fu-berlin.de/en/',
     },
   ],
   /* Noch keine Publikationen
@@ -155,23 +157,11 @@ const CONFIG = {
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'lofi',
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
-    disableSwitch: false,
-
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
+    defaultTheme: 'light',         // or your favorite
+    disableSwitch: true,           // hides the theme switcher
     respectPrefersColorScheme: false,
-
-    // Display the ring in Profile picture
-    displayAvatarRing: true,
-
-    // Available themes. To remove any theme, exclude from here.
-    themes: [
-      'light',
-      'cmyk',
-    ],
+    displayAvatarRing: false,
+    themes: ['light'],             // keep only one to avoid extras
   },
 };
 

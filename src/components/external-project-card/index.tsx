@@ -93,8 +93,8 @@ const ExternalProjectCard = ({
           <div className="flex items-center flex-col">
             <div className="w-full">
               <div className="px-4">
-                <div className="text-center w-full">
-                  <h2 className="font-medium text-center opacity-60 mb-2">
+                <div className="text-left w-full">
+                  <h2 className="font-medium text-left opacity-60 mb-2">
                     {item.title}
                   </h2>
                   {item.imageUrl && (
