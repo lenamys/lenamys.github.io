@@ -239,13 +239,17 @@ const GitProfile = ({ config }: { config: Config }) => {
             <div className="lg:col-span-2 col-span-1">
               <div className="grid grid-cols-1 gap-0">
                 {sanitizedConfig.projects.github.display && (
-                  <GithubProjectCard
-                    header={sanitizedConfig.projects.github.header}
-                    limit={sanitizedConfig.projects.github.automatic.limit}
-                    githubProjects={githubProjects}
-                    loading={loading}
-                    googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
-                  />
+                  <div className="card bg-base-200 shadow-xl border border-base-300">
+                    <div className="card-body p-8">
+                      <GithubProjectCard
+                        header={sanitizedConfig.projects.github.header}
+                        limit={sanitizedConfig.projects.github.automatic.limit}
+                        githubProjects={githubProjects}
+                        loading={loading}
+                        googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
+                      />
+                    </div>
+                  </div>
                 )}
                 {sanitizedConfig.publications.length !== 0 && (
                   <PublicationCard
