@@ -189,3 +189,21 @@ svg {
   height: 100%;
 }
 
+/* Page background */
+body { background-color: #E3B59D !important; }
+
+/* Prevent overflow (incl. GitHub projects) */
+.card { overflow: hidden; max-width: 100%; }
+.card * { min-width: 0; }
+.card img { max-width: 100%; height: auto; display: block; }
+
+/* Seamless, colorful borders per block (repeat every 3) */
+.card { border: 2px solid #A9D4DA; border-radius: 0; }
+.grid > *:nth-child(3n+2) .card { border-color: #C2DEC5; }
+.grid > *:nth-child(3n+3) .card { border-color: #E9E6D1; }
+
+/* Also apply to the vertical About list specifically */
+.about-list > *:nth-child(3n+1) .card { border-color: #A9D4DA; }
+.about-list > *:nth-child(3n+2) .card { border-color: #C2DEC5; }
+.about-list > *:nth-child(3n+3) .card { border-color: #E9E6D1; }
+
