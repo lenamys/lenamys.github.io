@@ -149,3 +149,58 @@ svg {
   border-radius: 0 !important;
 }
 
+/* Sparkly border for About Me cards */
+.external-project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.external-project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3, #54a0ff);
+  background-size: 300% 300%;
+  animation: sparkle 3s ease infinite;
+  z-index: -1;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.external-project-card .card {
+  background: var(--base-100);
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes sparkle {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Make external projects stretch full width in 3 columns */
+.lg\:col-span-2 .grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.external-project-card {
+  width: 100%;
+}
+
+/* Seamless alignment between left and right columns */
+.grid.grid-cols-1.lg\:grid-cols-3 {
+  align-items: stretch;
+}
+
+.col-span-1 .grid,
+.lg\:col-span-2 .grid {
+  height: 100%;
+}
+

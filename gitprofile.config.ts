@@ -26,7 +26,7 @@ const CONFIG = {
     external: {
       header: 'About Me',
       projects: [
-        // Fun Facts
+        // Keep only the fun facts, remove the playlists
         {
           title: 'Coffee Consumption Champion',
           description: 'I can identify coffee beans by smell alone ☕',
@@ -47,21 +47,6 @@ const CONFIG = {
           imageURL: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
           link: '',
           tech: 'Specialty: Google-Fu Master'
-        },
-        // Playlist
-        {
-          title: 'Lofi Hip Hop for Coding',
-          description: 'Perfect background music for those late-night coding sessions',
-          imageURL: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f',
-          link: 'https://open.spotify.com/playlist/your-lofi-playlist',
-          tech: '🎵 Lofi, Jazz, Chill'
-        },
-        {
-          title: 'Focus Flow Playlist',
-          description: 'Deep work music for maximum productivity',
-          imageURL: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f',
-          link: 'https://open.spotify.com/playlist/your-focus-playlist',
-          tech: '🎧 Ambient, Classical, Focus'
         }
       ],
     },
