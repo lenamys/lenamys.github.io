@@ -149,41 +149,37 @@ svg {
   border-radius: 0 !important;
 }
 
-/* Make external projects display in 3 columns */
+/* Simple 3-column layout for external projects */
 .lg\:col-span-2 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
-  width: 100%;
 }
 
-/* Sparkly border for About Me cards */
+/* Sparkly border - simplified */
 .external-project-card {
   position: relative;
   overflow: hidden;
-  margin: 0;
-  border-radius: 0;
 }
 
 .external-project-card::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
   background: linear-gradient(45deg, 
     #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3, #54a0ff);
   background-size: 300% 300%;
   animation: sparkle 3s ease infinite;
   z-index: -1;
-  border-radius: 0;
-  padding: 2px;
+  border-radius: 8px;
 }
 
 .external-project-card .card {
   background: var(--base-100);
-  border-radius: 0;
+  border-radius: 6px;
   position: relative;
   z-index: 1;
   margin: 0;
