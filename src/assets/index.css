@@ -82,6 +82,7 @@ body {
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f8f5f2;
 }
 
 code {
@@ -189,8 +190,6 @@ svg {
   height: 100%;
 }
 
-/* Page background */
-body { background-color: #E3B59D !important; }
 
 /* Prevent overflow (incl. GitHub projects) */
 .card { overflow: hidden; max-width: 100%; }
@@ -206,4 +205,25 @@ body { background-color: #E3B59D !important; }
 .about-list > *:nth-child(3n+1) .card { border-color: #A9D4DA; }
 .about-list > *:nth-child(3n+2) .card { border-color: #C2DEC5; }
 .about-list > *:nth-child(3n+3) .card { border-color: #E9E6D1; }
+
+.identity-rail { border-left: 6px solid #A9D4DA; padding-left: 12px; }
+@media (min-width: 1024px) { .identity-rail { position: relative; } }
+
+.card-title { position: relative; padding-bottom: 6px; }
+.card-title::after {
+  content: '';
+  position: absolute; left: 0; bottom: 0;
+  width: 72px; height: 3px; background: linear-gradient(90deg,#A9D4DA,#C2DEC5,#E9E6D1);
+}
+
+.about-list .card-body { position: relative; }
+.about-list .card-body::after {
+  content: '';
+  position: absolute; right: 12px; bottom: 12px;
+  width: 72px; height: 72px; opacity: .06; pointer-events: none;
+  background: url('/logo.png') no-repeat center/contain; /* or your photo */
+}
+
+.card { background: #fff; box-shadow: 0 1px 0 rgba(0,0,0,.04); }
+.rounded-box { border-radius: 12px; overflow: hidden; }
 
