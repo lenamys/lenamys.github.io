@@ -124,7 +124,6 @@ const ExternalProjectCard = ({
                         Visit <MdOpenInNew />
                       </a>
                     )}
-                  </p>
                 </div>
               </div>
             </div>
