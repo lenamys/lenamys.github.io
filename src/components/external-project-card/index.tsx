@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import LazyImage from '../lazy-image';
 import { MdOpenInNew } from 'react-icons/md';
 import { ga, skeleton } from '../../utils';
@@ -15,6 +15,9 @@ const ExternalProjectCard = ({
   loading: boolean;
   googleAnalyticId?: string;
 }) => {
+  const [items, setItems] = useState(externalProjects);
+  useEffect(() => setItems(externalProjects), [externalProjects]);
+
   const renderSkeleton = () => {
     const array = [];
     for (let index = 0; index < externalProjects.length; index++) {
@@ -68,7 +71,7 @@ const ExternalProjectCard = ({
   };
 
   const renderExternalProjects = () => {
-    return externalProjects.map((item, index) => (
+    return items.map((item, index) => (
       <a
         className="card shadow-md card-sm bg-base-100 cursor-pointer external-project-card"
         key={index}
@@ -160,8 +163,19 @@ const ExternalProjectCard = ({
                   <div className="text-base-content/60 text-xs sm:text-sm mt-1 truncate">
                     {loading
                       ? skeleton({ widthCls: 'w-32', heightCls: 'h-4' })
-                      : `Showcasing ${externalProjects.length} projects`}
+                      : `Showcasing ${items.length} projects`}
                   </div>
+                  {!loading && (
+                  <button
+                    type="button"
+                    className="btn btn-sm btn-primary"
+                    onClick={() =>
+                      setItems((prev) => [...prev].sort(() => Math.random() - 0.5))
+                    }
+                  >
+                    Shuffle
+                  </button>
+                )}
                 </div>
               </div>
             </div>
