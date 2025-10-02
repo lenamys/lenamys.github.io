@@ -24,13 +24,49 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
+      header: 'About Me',
       projects: [
+        // Fun Facts
+        {
+          title: 'Coffee Consumption Champion',
+          description: 'I can identify coffee beans by smell alone ☕',
+          imageURL: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085',
+          link: '',
+          tech: 'Superpower: Coffee Bean Whisperer'
+        },
+        {
+          title: 'Bug Hunter Extraordinaire', 
+          description: 'I once debugged a 3-day issue that was just a missing semicolon 😅',
+          imageURL: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c',
+          link: '',
+          tech: 'Specialty: Finding needles in haystacks'
+        },
+        {
+          title: 'Stack Overflow Ninja',
+          description: 'I can find the exact solution in under 30 seconds',
+          imageURL: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
+          link: '',
+          tech: 'Specialty: Google-Fu Master'
+        },
+        // Playlist
+        {
+          title: 'Lofi Hip Hop for Coding',
+          description: 'Perfect background music for those late-night coding sessions',
+          imageURL: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f',
+          link: 'https://open.spotify.com/playlist/your-lofi-playlist',
+          tech: '🎵 Lofi, Jazz, Chill'
+        },
+        {
+          title: 'Focus Flow Playlist',
+          description: 'Deep work music for maximum productivity',
+          imageURL: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f',
+          link: 'https://open.spotify.com/playlist/your-focus-playlist',
+          tech: '🎧 Ambient, Classical, Focus'
+        }
       ],
     },
   },
-  seo: { title: 'Portfolio of Lena S.', description: '', imageURL: '' },
+  seo: { title: 'Portfolio of Lena', description: '', imageURL: '' },
   social: {
     linkedin: '',
     x: '',
@@ -58,6 +94,7 @@ const CONFIG = {
       '', 
   },
   skills: [
+    'Python',
     'PHP',
     'MySQL',
     'Machine Learning',
@@ -126,7 +163,7 @@ const CONFIG = {
     source: 'dev', // medium | dev
     username: 'arifszn', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
-  }, */
+   }, */
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
