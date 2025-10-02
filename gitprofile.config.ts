@@ -88,7 +88,7 @@ const CONFIG = {
   ],*/
   educations: [
     {
-      institution: 'Sunggyungwan University - Exchange Student',
+      institution: 'Sungkyungwan University - Exchange Student',
       degree: 'Computer Science (B.Sc.)',
       from: '08/2025',
       to: '12/2025',
@@ -122,7 +122,7 @@ const CONFIG = {
     },
   ], */
   // Display articles from your medium or dev account. (Optional)
-  blog: {
+  /*blog: {
     source: 'dev', // medium | dev
     username: 'arifszn', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
@@ -132,6 +132,7 @@ const CONFIG = {
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
+  */
   themeConfig: {
     defaultTheme: 'lofi',
     // Hides the switch in the navbar
@@ -148,11 +149,7 @@ const CONFIG = {
     // Available themes. To remove any theme, exclude from here.
     themes: [
       'light',
-      'garden',
-      'forest',
-      'dracula',
       'cmyk',
-      'autumn',
     ],
   },
 };
