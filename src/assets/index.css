@@ -149,10 +149,20 @@ svg {
   border-radius: 0 !important;
 }
 
+/* Make external projects display in 3 columns */
+.lg\:col-span-2 .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  width: 100%;
+}
+
 /* Sparkly border for About Me cards */
 .external-project-card {
   position: relative;
   overflow: hidden;
+  margin: 0;
+  border-radius: 0;
 }
 
 .external-project-card::before {
@@ -167,15 +177,16 @@ svg {
   background-size: 300% 300%;
   animation: sparkle 3s ease infinite;
   z-index: -1;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 2px;
 }
 
 .external-project-card .card {
   background: var(--base-100);
-  border-radius: 6px;
+  border-radius: 0;
   position: relative;
   z-index: 1;
+  margin: 0;
 }
 
 @keyframes sparkle {
@@ -184,17 +195,7 @@ svg {
   100% { background-position: 0% 50%; }
 }
 
-/* Make external projects stretch full width in 3 columns */
-.lg\:col-span-2 .grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-}
-
-.external-project-card {
-  width: 100%;
-}
-
-/* Seamless alignment between left and right columns */
+/* Ensure seamless alignment */
 .grid.grid-cols-1.lg\:grid-cols-3 {
   align-items: stretch;
 }
