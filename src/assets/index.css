@@ -149,47 +149,35 @@ svg {
   border-radius: 0 !important;
 }
 
-/* Simple 3-column layout for external projects */
-.lg\:col-span-2 .grid {
+/* Scoped 3-col grid just for About Me (External Projects) */
+.about-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 0;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+/* Prevent overflow within grid items */
+.about-grid > * { min-width: 0; }
+
+/* About Me as vertical list */
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;           /* keep seamless */
+  width: 100%;
 }
 
-/* Sparkly border - simplified */
-.external-project-card {
-  position: relative;
-  overflow: hidden;
-}
+.about-list > * { min-width: 0; }
 
-.external-project-card::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, 
-    #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3, #54a0ff);
-  background-size: 300% 300%;
-  animation: sparkle 3s ease infinite;
-  z-index: -1;
-  border-radius: 8px;
-}
-
-.external-project-card .card {
-  background: var(--base-100);
-  border-radius: 6px;
-  position: relative;
-  z-index: 1;
-  margin: 0;
-}
-
-@keyframes sparkle {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+/* Keep cards seamless and full-width */
+.external-project-card { border-radius: 0; width: 100%; }
+.external-project-card .card { border-radius: 0; width: 100%; }
+.external-project-card img { max-width: 100%; height: auto; display: block; }
 
 /* Ensure seamless alignment */
 .grid.grid-cols-1.lg\:grid-cols-3 {
