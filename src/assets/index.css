@@ -135,3 +135,17 @@ svg {
     opacity: 1;
   }
 }
+
+/* Remove rounded corners for seamless grid layout */
+.card {
+  border-radius: 0 !important;
+}
+
+.card-body {
+  border-radius: 0 !important;
+}
+
+.grid > * {
+  border-radius: 0 !important;
+}
+
