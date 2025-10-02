@@ -75,7 +75,15 @@ const EducationCard = ({
                     key={index}
                     time={`${item.from} - ${item.to}`}
                     degree={item.degree}
-                    institution={item.institution}
+                    institution={
+                      item.link ? (
+                        <a href={item.link} target="_blank" rel="noreferrer" className="link link-primary">
+                          {item.institution}
+                        </a>
+                      ) : (
+                        item.institution
+                      )
+                    }
                   />
                 ))}
               </>

@@ -89,6 +89,7 @@ export interface SanitizedEducation {
   degree?: string;
   from: string;
   to: string;
+  link?: string;
 }
 
 export interface SanitizedPublication {

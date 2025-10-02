@@ -112,8 +112,18 @@ const ExternalProjectCard = ({
                       </div>
                     </div>
                   )}
-                  <p className="mt-2 text-base-content text-sm text-justify">
-                    {item.description}
+                    <p className="mt-2 text-base-content text-sm text-justify">{item.description}</p>
+                    {item.link && (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link link-primary mt-2 inline-flex items-center gap-1"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Visit <MdOpenInNew />
+                      </a>
+                    )}
                   </p>
                 </div>
               </div>
