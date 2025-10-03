@@ -71,7 +71,7 @@ const ExternalProjectCard = ({
   };
 
   const renderExternalProjects = () => {
-    return items.map((item, index) => (
+    return items.slice(0, 3).map((item, index) => (
       <a
         className="card shadow-md card-sm bg-base-100 cursor-pointer external-project-card"
         key={index}
@@ -163,25 +163,27 @@ const ExternalProjectCard = ({
                   <div className="text-base-content/60 text-xs sm:text-sm mt-1 truncate">
                     {loading
                       ? skeleton({ widthCls: 'w-32', heightCls: 'h-4' })
-                      : `Showcasing ${items.length} projects`}
+                      : `Showing 3 of ${items.length} items`}
                   </div>
-                  {!loading && (
-                  <button
-                    type="button"
-                    className="btn btn-sm btn-primary"
-                    onClick={() =>
-                      setItems((prev) => [...prev].sort(() => Math.random() - 0.5))
-                    }
-                  >
-                    Shuffle
-                  </button>
-                )}
                 </div>
               </div>
             </div>
             <div className="about-list">
               {loading ? renderSkeleton() : renderExternalProjects()}
             </div>
+            {!loading && (
+              <div className="mt-4">
+                <button
+                  type="button"
+                  className="btn btn-sm btn-primary"
+                  onClick={() =>
+                    setItems((prev) => [...prev].sort(() => Math.random() - 0.5))
+                  }
+                >
+                  Shuffle
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
