@@ -272,8 +272,10 @@ a[href*="github.com"]:hover {
   overflow: hidden;
   border-right: 2px solid #A9D4DA;
   white-space: nowrap;
-  width: 0 !important; 
-  animation: typing 3s steps(40, end), blink 1s infinite;
+  width: 0 !important;
+  max-width: 0 !important;
+  animation: typing 3s steps(40, end) 0.5s, blink 1s infinite;
+  animation-fill-mode: forwards;
 }
 
 @keyframes typing {
