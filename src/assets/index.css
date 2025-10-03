@@ -250,11 +250,6 @@ a[href*="github.com"]:hover {
   position: relative;
 }
 
-.avatar:hover {
-  transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
 @keyframes pulse {
   0% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.1); opacity: 0.7; }
@@ -288,6 +283,11 @@ a[href*="github.com"]:hover {
 @keyframes blink {
   0%, 50% { border-color: #A9D4DA; }
   51%, 100% { border-color: transparent; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* Apply to profile name */
