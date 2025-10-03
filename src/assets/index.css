@@ -227,3 +227,8 @@ svg {
 .card { background: #fff; box-shadow: 0 1px 0 rgba(0,0,0,.04); }
 .rounded-box { border-radius: 12px; overflow: hidden; }
 
+/* Add padding to GitHub project content */
+.github-project-card .card-body {
+  padding: 2rem;
+}
+
