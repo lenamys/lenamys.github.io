@@ -272,25 +272,19 @@ a[href*="github.com"]:hover {
   overflow: hidden;
   border-right: 2px solid #A9D4DA;
   white-space: nowrap;
-  width: 0 !important;
-  max-width: 0 !important;
-  animation: typing 3s steps(40, end) 0.5s, blink 1s infinite;
+  width: 0;
+  animation: typing 3s steps(40) 0.5s, blink 1s infinite;
   animation-fill-mode: forwards;
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  0% { width: 0; }
+  100% { width: 100%; }
 }
 
 @keyframes blink {
   0%, 50% { border-color: #A9D4DA; }
   51%, 100% { border-color: transparent; }
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
 }
 
 /* Apply to profile name */
