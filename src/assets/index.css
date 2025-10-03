@@ -262,11 +262,17 @@ a[href*="github.com"]:hover {
   cursor: pointer;
 }
 
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
 /* Typing animation for name/title */
 .typewriter {
   overflow: hidden;
   border-right: 2px solid #A9D4DA;
   white-space: nowrap;
+  width: 0 !important; 
   animation: typing 3s steps(40, end), blink 1s infinite;
 }
 
@@ -288,4 +294,12 @@ a[href*="github.com"]:hover {
 /* Apply to profile name */
 .profile-name {
   animation: typing 3s steps(40, end), blink 1s infinite;
+}
+
+/* Remove hover from GitHub profile link only */
+a[href*="github.com"]:hover {
+  border: none !important;
+  text-decoration: underline;
+  transform: none !important;
+  box-shadow: none !important;
 }
