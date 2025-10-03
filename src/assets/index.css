@@ -300,3 +300,8 @@ a[href*="github.com"]:hover {
   transform: none !important;
   box-shadow: none !important;
 }
+
+.about-list .card,
+.github-project-card .card {
+  border: none !important;
+}
