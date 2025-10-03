@@ -232,3 +232,14 @@ svg {
   padding: 2rem;
 }
 
+/* Remove border from GitHub profile link */
+a[href*="github.com"] {
+  border: none !important;
+  text-decoration: none;
+}
+
+a[href*="github.com"]:hover {
+  border: none !important;
+  text-decoration: underline;
+}
+
