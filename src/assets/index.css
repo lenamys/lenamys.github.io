@@ -243,3 +243,68 @@ a[href*="github.com"]:hover {
   text-decoration: underline;
 }
 
+/* Make the left profile section pop */
+.avatar {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.avatar:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Pulsing ring around avatar */
+.avatar::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 3px solid #A9D4DA;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Make profile cards more interactive */
+.card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Typing animation for name/title */
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #A9D4DA;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink 1s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 50% { border-color: #A9D4DA; }
+  51%, 100% { border-color: transparent; }
+}
+
+/* Apply to profile name */
+.profile-name {
+  animation: typing 3s steps(40, end), blink 1s infinite;
+}

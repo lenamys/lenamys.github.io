@@ -65,7 +65,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             {loading || !profile ? (
               skeleton({ widthCls: 'w-48', heightCls: 'h-8' })
             ) : (
-              <span className="text-base-content opacity-70">
+              <span className="text-base-content opacity-70 typewriter">
                 {profile.name}
               </span>
             )}
