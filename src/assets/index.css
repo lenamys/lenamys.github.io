@@ -255,20 +255,6 @@ a[href*="github.com"]:hover {
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
-/* Pulsing ring around avatar */
-.avatar::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 3px solid #A9D4DA;
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-  z-index: -1;
-}
-
 @keyframes pulse {
   0% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.1); opacity: 0.7; }
