@@ -28,25 +28,29 @@ const CONFIG = {
       projects: [
         // Keep only the fun facts, remove the playlists
         {
-          title: 'Coffee Consumption Champion',
-          description: 'I can identify coffee beans by smell alone ☕',
-          imageURL: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085',
+          title: 'Tea Lover in Denial',
+          description: 'Drinking tea is my favorite way to relax... but coffee still owns my soul',
           link: '',
-          tech: 'Superpower: Coffee Bean Whisperer'
         },
         {
-          title: 'Bug Hunter Extraordinaire', 
-          description: 'I once debugged a 3-day issue that was just a missing semicolon 😅',
-          imageURL: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c',
+          title: 'Wikipedia Enthusiast', 
+          description: 'I like to expand my knowledge by stumbling through random Wikipedia articles',
           link: '',
-          tech: 'Specialty: Finding needles in haystacks'
         },
         {
-          title: 'Stack Overflow Ninja',
-          description: 'I can find the exact solution in under 30 seconds',
-          imageURL: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
+          title: 'Playlist Alchemist',
+          description: 'Coding while listening to my playlist is when I feel the most productive',
           link: '',
-          tech: 'Specialty: Google-Fu Master'
+        }, 
+        {
+          title: 'Regex Wizard',
+          description: 'I write patterns that even future me won’t understand',
+          link: '',
+        },
+        {
+          title: 'Clean Code Advocate',
+          description: 'Because future me deserves readable code too',
+          link: '',
         }
       ],
     },
@@ -84,30 +88,6 @@ const CONFIG = {
     'MySQL',
     'Machine Learning',
   ],
-  /*experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],*/
   educations: [
     {
       institution: 'Sungkyunkwan University - Exchange Student',
@@ -124,33 +104,6 @@ const CONFIG = {
       link: 'https://www.fu-berlin.de/en/',
     },
   ],
-  /* Noch keine Publikationen
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-  ], */
-  // Display articles from your medium or dev account. (Optional)
-  /*blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
-   }, */
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
