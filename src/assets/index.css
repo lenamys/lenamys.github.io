@@ -273,7 +273,7 @@ a[href*="github.com"]:hover {
   border-right: 2px solid #A9D4DA;
   white-space: nowrap;
   width: 0;
-  animation: typing 3s steps(7) 0.5s, blink 1s infinite;
+  animation: typing 3s steps(6) 0.5s, blink 1s infinite;
   animation-fill-mode: forwards;
 }
 
